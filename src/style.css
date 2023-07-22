@@ -1,0 +1,21 @@
+#content {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    color: white;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: #450a0a;
+    padding: 0 13%;
+}
+
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
