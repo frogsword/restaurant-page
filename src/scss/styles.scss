@@ -1,0 +1,151 @@
+@import "bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+body {
+    margin: 0 0 0 0;
+}
+
+#content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    font-family: 'Pacifico', cursive;
+}
+
+.nav {
+    height: 100%;
+}
+
+.navbar {
+    position: absolute !important;
+    background-color: #c83f49 !important;
+    border-color: #c83f49 !important;
+    --bs-navbar-padding-y: 1%;
+    --bs-navbar-padding-x: 3vw;
+}
+
+.navbar-brand {
+    --bs-navbar-brand-font-size: 48px;
+}
+
+.navbar-nav {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: right !important;
+    gap: 2vw !important;
+    font-size: 24px !important;
+}
+
+.nav-link:hover {
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.collapse {
+    justify-content: right;
+}
+
+.background-wrapper {
+    height: 100vh;
+    width: 100vw;
+}
+
+.background {
+    background-image: url('../assets/homepage-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: 25%;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    filter: blur(1px);
+    filter: brightness(70%);
+}
+
+//home
+.mainHome {
+    position: absolute;
+    height: 50%;
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+
+    opacity: 100;
+    transition: 0.5s;
+    z-index: 1;
+}
+
+.mainHome h1 {
+    font-size: 76px;
+    align-self: center;
+}
+
+.orderButton {
+    background-color: #c83f49;
+    border: 1px solid #c83f49;
+    font-size: 24px;
+    border-radius: 20px;
+    padding: 0.8rem 1rem;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.993);
+    align-self: center;
+}
+
+.orderButton:hover {
+    background-color: #a12e37;
+    border-color: #a12e37;
+    transition: 0.5s;
+    transform: scale(1.05);
+}
+
+.orderButton:active {
+    background-color: #8b282f;
+    border-color: #8b282f;
+    transition: 0.5s;
+    transform: scale(1);
+}
+
+//menu
+.mainMenu {
+    position: absolute;
+    height: 80%;
+    width: 90%;
+    align-self: flex-end;
+    margin-bottom: 2%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: #c83f49;
+    border-radius: 50px;
+    padding: 1%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.993);
+
+    display: grid;
+    grid-template-rows: min-content;
+}
+
+.mainMenu > h1 {
+    margin: 10px;
+}
+
+.mainContact {
+    position: absolute;
+    height: 80%;
+    width: 90%;
+    align-self: flex-end;
+    margin-bottom: 2%;
+    text-align: center;
+    opacity: 0;
+    transition: 0.5s;
+    background-color: #c83f49;
+    border-radius: 50px;
+    padding: 1%;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.993);
+}
