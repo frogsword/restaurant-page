@@ -8,7 +8,7 @@ module.exports = {
     },
     plugins: [
         new HtmlWebpackPlugin({
-            title: 'Restaurant Page',
+            title: 'Pancakeria',
         }),
         new FaviconsWebpackPlugin('./src/assets/favicon.svg'),
     ],
